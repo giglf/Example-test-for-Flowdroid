@@ -25,8 +25,10 @@ public class MainActivity extends Activity {
 		
 		A a = new A();
 		B b = a.atob;
-		foo(a);
+		int anotherPath = foo(a);
 		sink(b.num);
+		
+		sink(anotherPath);
 		
 	}
 	
@@ -36,10 +38,12 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	public void foo(A aa){
+	public int foo(A aa){
 		B tmp = aa.atob;
 		int w = source();
 		tmp.num = w;
+		
+		return w;
 	}
 	
 	public int source(){
