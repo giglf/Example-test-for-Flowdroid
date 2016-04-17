@@ -17,8 +17,8 @@ For convenience, I left the test keystore in the projectm which password is 1234
 After you get the apk, you can set source and sink in the flowdroid to test it.
 Like
 <pre><code>
-	&lt;com.example.testflowdroid.MainActivity: int source()&gt; -> _SOURCE_
-	&lt;com.example.testflowdroid.MainActivity: void sink(int)&gt; -> _SINK_
+	&lt;com.example.testflowdroid.MainActivity: int source()&gt; -> \_SOURCE\_
+	&lt;com.example.testflowdroid.MainActivity: void sink(int)&gt; -> \_SINK\_
 </pre></code>
 
 And then you can run your flowdroid to check it.
