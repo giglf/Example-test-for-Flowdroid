@@ -35,8 +35,8 @@ You can switch to branch 3rdExample to use the Third example.
 About this example. It is a bit different to the second, which should use the source and sink below.
 
 <pre><code>
-	&lt;com.example.testflowdroid.MainActivity: java.lang.String source()&gt -> _SOURCE_
-	&lt;com.example.testflowdroid.MainActivity: void sink(java.lang.String)&gt -> _SINK_
+	&lt;com.example.testflowdroid.MainActivity: java.lang.String source()&gt; -> _SOURCE_
+	&lt;com.example.testflowdroid.MainActivity: void sink(java.lang.String)&gt; -> _SINK_
 </pre></code>
 
 The difference is the String from source have been process.
