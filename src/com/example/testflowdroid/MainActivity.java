@@ -4,17 +4,9 @@ package com.example.testflowdroid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import java.lang.String;
 
-class A{
-	public B atob;
-	A(){
-		atob = new B();
-	}
-}
 
-class B{
-	public int num;
-}
 
 public class MainActivity extends Activity {
 	@Override
@@ -22,13 +14,9 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		
-		A a = new A();
-		B b = a.atob;
-		int anotherPath = foo(a);
-		sink(b.num);
-		
-		sink(anotherPath);
+		String raw_password = source();
+		String password = calPassword(raw_password);
+		sink(password);
 		
 	}
 	
@@ -38,19 +26,21 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	public int foo(A aa){
-		B tmp = aa.atob;
-		int w = source();
-		tmp.num = w;
-		
-		return w;
+	public String calPassword(String s){
+		String rel = "";
+		for(char c : s.toCharArray()){
+			rel += c + "_";
+		}
+		return rel;
 	}
 	
-	public int source(){
-		return 3;
+	public String source(){
+		String raw_password = "123456";
+		return raw_password;
 	}
 	
-	public void sink(int d){
+	public void sink(String s){
 		
 	}
+
 }
