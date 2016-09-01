@@ -7,10 +7,10 @@ It includes three examples, which distinguished by branch.
 
 <h3>1st Example</h3>
 In the first example, which in the branch 1stExample, is not useful.
-I don't know why. So I recommend you to test with 2enExample.
+I don't know why. So I recommend you to test with 2ndExample.
 
 <h3>2nd Example</h3>
-To use 2enExample, you should import the project to eclipse.
+To use 2ndExample, you should import the project to eclipse.
 Because this is an android 4.2.2 project under eclipse.
 Or you can config yourselves.
 
