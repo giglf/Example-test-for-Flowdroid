@@ -19,10 +19,10 @@ For convenience, I left the test keystore in the projectm which password is 1234
 
 After you get the apk, you can set source and sink in the flowdroid to test it.
 Like
-<pre><code>
-	&lt;com.example.testflowdroid.MainActivity: int source()&gt; -> \_SOURCE\_
-	&lt;com.example.testflowdroid.MainActivity: void sink(int)&gt; -> \_SINK\_
-</pre></code>
+```
+	<com.example.testflowdroid.MainActivity: int source()> -> _SOURCE_
+	<com.example.testflowdroid.MainActivity: void sink(int)> -> _SINK_
+```
 
 And then you can run your flowdroid to check it.
 
@@ -34,10 +34,10 @@ You can switch to branch 3rdExample to use the Third example.
 
 About this example. It is a bit different to the second, which should use the source and sink below.
 
-<pre><code>
-	&lt;com.example.testflowdroid.MainActivity: java.lang.String source()&gt; -> \_SOURCE\_
-	&lt;com.example.testflowdroid.MainActivity: void sink(java.lang.String)&gt; -> \_SINK\_
-</pre></code>
+```
+	<com.example.testflowdroid.MainActivity: java.lang.String source()> -> _SOURCE_
+	<com.example.testflowdroid.MainActivity: void sink(java.lang.String)> -> _SINK_
+```
 
 The difference is the String from source have been process.
 For eample, the raw password is (String) "123456". And the password after process is "1-2-3-4-5-6". It still include the informations of the password. And can be use by hacker.
